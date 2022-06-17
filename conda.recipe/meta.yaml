@@ -1,0 +1,35 @@
+{% set name = "WEKA" %}
+{% set release = "3.9" %}
+{% set version_build = "6" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ release }}.{{ version_build }}
+
+source:
+  path: ./
+
+build:
+  script: python build.py {{ release }} {{ version_build }}
+  number: 0
+  skip: True  # [not linux]
+
+requirements:
+  build:
+    - python
+  host:
+    - python
+    - wget  # [linux]
+    - unzip # [linux]
+  run:
+    - python
+    - rapids {{ rapids_version }}
+    - cudatoolkit {{ cudatoolkit_version }}
+    - dask-sql
+test:
+  requires:
+
+about:
+  license: GPLv3
+  license_url: https://www.gnu.org/licenses/gpl-3.0.txt
+  home: https://www.cs.waikato.ac.nz/ml/weka/

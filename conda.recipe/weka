@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+DIR=$( dirname -- "${SCRIPT_DIR}" )/pkgs/weka &> /dev/null
+pushd "$DIR" &> /dev/null || exit 1
+bash weka.sh "$@"
+popd &> /dev/null || exit 1

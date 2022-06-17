@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+
+import argparse
+import json
+import os
+import shutil
+import stat
+from pathlib import Path
+
+
+def copy_files(src, dst):
+    def set_chmod(file_name):
+        # Do a simple chmod +x for a file within python
+        st = os.stat(file_name)
+        os.chmod(file_name, st.st_mode | stat.S_IXOTH)
+
+    try:
+        if os.path.isfile(src):
+            shutil.copy(src, dst)
+            set_chmod(dst)
+    except FileExistsError:
+        pass
+
+
+def _main(args):
+
+    prefix_dir_path = Path(os.environ["PREFIX"])
+    prefix_bin_dir_path = prefix_dir_path / "bin"
+    recipe_dir_path = Path(os.environ["RECIPE_DIR"])
+
+    # Copy accelerated-weka-post-install.py to $PREFIX/bin
+    src = recipe_dir_path / "accelerated-weka-post-install.py"
+    dst = prefix_bin_dir_path
+    os.makedirs(dst, exist_ok=True)
+    copy_files(src, dst)
+    with open(prefix_bin_dir_path / "accelerated-weka-extra-args.json", "w") as f:
+        f.write(json.dumps(args))
+
+    src = recipe_dir_path / "weka"
+    dst = prefix_bin_dir_path
+    copy_files(src, dst)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Build script for accelerated WEKA")
+
+    parser.add_argument("release", action="store", type=str)
+    parser.add_argument("version_build", action="store", type=str)
+    results = parser.parse_args()
+    args = vars(results)
+    _main(args)
