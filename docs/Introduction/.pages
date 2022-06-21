@@ -4,6 +4,6 @@ nav:
   # - basic-concepts.md
   - architecture.md
   - getting_started.md
-  # - why-use-river.md
+  - features.md
   # - next-steps.md
   - examples.md
