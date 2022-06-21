@@ -4,15 +4,17 @@ repo_name: Waikato/acceleratedWEKA
 repo_url: https://github.com/Waikato/acceleratedWEKA
 nav:
   - Home: index.md
-  - Introduction: Introdution
-  # - Getting Started: Introduction/getting_started.md
-  # - Examples: Introduction/examples.md
+  - Introduction:
+    - Getting Started: Introduction/getting_started.md
+    - Examples: Introduction/examples.md
   - About: about.md
 theme:
   name: material
   icon:
     repo: fontawesome/brands/github
-
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
