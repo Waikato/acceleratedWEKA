@@ -42,4 +42,4 @@ weka -memory 48g -main weka.Run weka.classifiers.rapids.CuMLClassifier -split-pe
 
 8. Compare the results with the RandomForestClassifier.
 
-9. Feel free to explore the other supported learners from RAPIDS. You can find a comprehensive list of them in [Features]().
+9. Feel free to explore the other supported learners from RAPIDS. You can find a comprehensive list of them in [Features](https://waikato.github.io/acceleratedWEKA/Introduction/features/).

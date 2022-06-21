@@ -1,7 +1,7 @@
-## Features 
-
 ### Single GPU support
+
 The algorithms currently supported by Accelerated WEKA are:
+
 - LinearRegression
 - LogisticRegression
 - Ridge
@@ -21,7 +21,9 @@ The algorithms currently supported by Accelerated WEKA are:
 - KNeighborsClassifier
 
 ### Multi-GPU support
+
 The algorithms supported by Accelerated WEKA in multi-GPU mode are:
+
 - KNeighborsRegressor
 - KNeighborsClassifier
 - LinearRegression

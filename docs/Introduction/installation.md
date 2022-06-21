@@ -1,7 +1,5 @@
-# Installation
-
-Accelerated WEKA was designed to provide an easy installation process. It can be done via the conda work with Python 3.8 and above. Installation can be done via `pip`:
-Accelerated WEKA simplifies the installation process by using the [conda environment](https://docs.conda.io/en/latest/), making straightforward to use it from the beginning. Once you have conda installed, Accelerated WEKA can be installed by issuing the following command:
+Accelerated WEKA was designed to provide an easy installation process.
+Accelerated WEKA simplifies the installation process by using the [conda environment](https://docs.conda.io/en/latest/). This makes straightforward to use Accelerated WEKA from the beginning. Once you have conda installed, Accelerated WEKA can be installed by issuing the following command:
 
 ```sh
 conda create -n accelweka -c rapidsai -c nvidia -c conda-forge  -c waikato weka
