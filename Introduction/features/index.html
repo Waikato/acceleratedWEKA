@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://Waikato.github.io/acceleratedWEKA/Introduction/getting_started/">
+        <link rel="canonical" href="https://Waikato.github.io/acceleratedWEKA/Introduction/features/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
     
     
       
-        <title>Getting Started - acceleratedWEKA</title>
+        <title>Features - acceleratedWEKA</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#running-a-quick-example-with-the-gui" class="md-skip">
+        <a href="#features" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started
+              Features
             
           </span>
         </div>
@@ -210,15 +210,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../getting_started/" class="md-tabs__link">
         Introduction
       </a>
     </li>
@@ -308,14 +306,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -336,55 +332,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Getting Started
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../getting_started/" class="md-nav__link">
         Getting Started
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#running-a-quick-example-with-the-gui" class="md-nav__link">
-    Running a quick example with the GUI
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-a-quick-example-with-the-command-line" class="md-nav__link">
-    Running a quick example with the command line
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -450,16 +402,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#running-a-quick-example-with-the-gui" class="md-nav__link">
-    Running a quick example with the GUI
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+    <nav class="md-nav" aria-label="Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-gpu-support" class="md-nav__link">
+    Single GPU support
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#running-a-quick-example-with-the-command-line" class="md-nav__link">
-    Running a quick example with the command line
+        
+          <li class="md-nav__item">
+  <a href="#multi-gpu-support" class="md-nav__link">
+    Multi-GPU support
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -475,72 +440,44 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/Waikato/acceleratedWEKA/edit/master/docs/Introduction/getting_started.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/Waikato/acceleratedWEKA/edit/master/docs/Introduction/features.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>Getting Started</h1>
+  <h1>Features</h1>
 
-<h2 id="running-a-quick-example-with-the-gui">Running a quick example with the GUI</h2>
-<h2 id="running-a-quick-example-with-the-command-line">Running a quick example with the command line</h2>
-<p>To run a quick example with the command line there are two easy steps.</p>
-<ol>
-<li>First, let's create a small dataset just to get the hang of how to use Accelerated WEKA (except the new learner classes, it is the same as using standard WEKA):</li>
-</ol>
-<pre><code class="language-sh">weka -main weka.Run .RandomRBF -n 10000 -a 50 &gt; RBFa50n10k.arff
-</code></pre>
-<ol>
-<li>
-<p>Let's go through the arguments of the above command:  </p>
-<ul>
-<li><strong>weka</strong> is the main program, if you are using this command alone it launches the GUI. If you insert other arguments it can run tasks from the terminal.</li>
-<li><strong>-main weka.Run</strong> indicates that we want to run the class <em>weka.Run</em>. In other words, we want to run straight from the command line, as opposed to the default <em>weka.gui.GUIChooser</em> that launches the GUI.</li>
-<li><strong>.RandomRBF</strong> is the class that we want to use. This is a relative reference for the generator class that creates datasets with a Radial function.</li>
-<li><strong>-n 10000</strong> is one of the possible arguments for the <em>RandomRBF</em> class, it indicates that we want a dataset with ten thousand instances.</li>
-<li><strong>-a 50</strong> is another one of the <em>RandomRBF</em> arguments, it sets the number of attributes on the dataset to 50.</li>
-<li><strong>&gt;&gt; RBFa50n10k.arff</strong> is the bash <em>append operator</em> followed by the <em>file name</em> that we want to write to.</li>
-</ul>
-</li>
-<li>
-<p>Then, let's use the newly created dataset to run some of the new RAPIDS algorithms using the GPU.</p>
-</li>
-</ol>
-<pre><code class="language-sh"> weka -memory 48g -main weka.Run weka.classifiers.rapids.CuMLClassifier -split-percentage 80 -learner RandomForestClassifier -t $(pwd)/RBFa5kn10k.arff -py-command python
-</code></pre>
-<ol>
-<li>
-<p>Again, let's go through the arguments of the above command:</p>
-<ul>
-<li><strong>-memory 48g</strong> sets the JVM maximum heap to 48 gigabytes.</li>
-<li><strong>weka.classifiers.rapids.CuMLClassifier</strong> is the class responsible for integrating RAPIDS to WEKA.</li>
-<li><strong>-split-percentage 80</strong> means that we want to split the dataset into two smaller ones. We should train with 80% of the dataset and test with the remaining 20%.</li>
-<li><strong>-learner RandomForestClassifier</strong> indicates which RAPIDS classifier/regressor we want to use in our experiment.</li>
-<li><strong>-t $(pwd)/RBFa5kn10k.arff</strong> sets the previously created dataset as the input for our experiment.</li>
-<li><strong>-py-command python</strong> is an optional command just to make sure we are using the correct python command and to modify the python call in case we need to.</li>
-</ul>
-</li>
-<li>
-<p>After the code is run, you will get the result. Check accuracy and time taken.</p>
-</li>
-<li>
-<p>Now, let's run another RAPIDS learner with the same dataset. This time, try using the Support Vector classifier (SVC):</p>
-</li>
-</ol>
-<pre><code class="language-sh">weka -memory 48g -main weka.Run weka.classifiers.rapids.CuMLClassifier -split-percentage 80 -learner SVC -t $(pwd)/RBFa5kn10k.arff -py-command python
-</code></pre>
-<ol>
-<li>
-<p>Notice the only difference is the argument of the <strong>-learner</strong> option.</p>
-</li>
-<li>
-<p>Compare the results with the RandomForestClassifier.</p>
-</li>
-<li>
-<p>Feel free to explore the other supported learners from RAPIDS. You can find a comprehensive list of them in <a href="">Features</a>.</p>
-</li>
-</ol>
+<h2 id="features">Features</h2>
+<h3 id="single-gpu-support">Single GPU support</h3>
+<p>The algorithms currently supported by Accelerated WEKA are:
+- LinearRegression
+- LogisticRegression
+- Ridge
+- Lasso
+- ElasticNet
+- MBSGDClassifier
+- MBSGDRegressor
+- MultinomialNB
+- BernoulliNB
+- GaussianNB
+- RandomForestClassifier
+- RandomForestRegressor
+- SVC
+- SVR
+- LinearSVC
+- KNeighborsRegressor
+- KNeighborsClassifier</p>
+<h3 id="multi-gpu-support">Multi-GPU support</h3>
+<p>The algorithms supported by Accelerated WEKA in multi-GPU mode are:
+- KNeighborsRegressor
+- KNeighborsClassifier
+- LinearRegression
+- Ridge
+- Lasso
+- ElasticNet
+- MultinomialNB
+- CD</p>
 
               
             </article>
@@ -551,42 +488,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Home
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../examples/" class="md-footer__link md-footer__link--next" aria-label="Next: Examples" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Examples
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

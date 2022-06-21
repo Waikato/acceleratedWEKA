@@ -11,7 +11,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://Waikato.github.io/acceleratedWEKA/Introduction/architecture/</loc>
+         <lastmod>2022-06-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://Waikato.github.io/acceleratedWEKA/Introduction/examples/</loc>
+         <lastmod>2022-06-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Waikato.github.io/acceleratedWEKA/Introduction/features/</loc>
          <lastmod>2022-06-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
