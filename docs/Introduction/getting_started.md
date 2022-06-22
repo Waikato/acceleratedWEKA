@@ -1,3 +1,6 @@
+AcceleratedWEKA offers the same options as the standard WEKA. 
+
+
 ## Running a quick example with the GUI
 
 

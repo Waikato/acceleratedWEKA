@@ -1,3 +1,7 @@
+Accelerated WEKA provides support to all algorithms from the previous packages.
+In addition, wekaRAPIDS provides integration with the RAPIDS library, which offers both Single and Multi-GPU support.
+Below, you can find the RAPIDS algorithms currently supported by wekaRAPIDS.  
+
 ### Single GPU support
 
 The algorithms currently supported by Accelerated WEKA are:
