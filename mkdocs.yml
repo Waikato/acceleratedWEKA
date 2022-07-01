@@ -2,6 +2,9 @@ site_name: acceleratedWEKA
 site_url: https://Waikato.github.io/acceleratedWEKA
 repo_name: Waikato/acceleratedWEKA
 repo_url: https://github.com/Waikato/acceleratedWEKA
+markdown_extensions:
+  - attr_list
+  - md_in_html
 nav:
   - Home: index.md
   - User Guide:
@@ -16,7 +19,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
-    - navigation.expand
+    - navigation.expand   
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
