@@ -4,12 +4,12 @@ repo_name: Waikato/acceleratedWEKA
 repo_url: https://github.com/Waikato/acceleratedWEKA
 nav:
   - Home: index.md
-  - Introduction:
-    - Installation: Introduction/installation.md
-    - Architecture: Introduction/architecture.md
-    - Getting Started: Introduction/getting_started.md
-    - Features: Introduction/features.md
-    - Examples: Introduction/examples.md
+  - User Guide:
+    - Installation: user_guide/installation.md
+    - Architecture: user_guide/architecture.md
+    - Getting Started: user_guide/getting_started.md
+    - Features: user_guide/features.md
+    - Examples: user_guide/examples.md
   - About: about.md
 theme:
   name: material
