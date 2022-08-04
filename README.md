@@ -35,6 +35,10 @@ After finishing the installation and activation steps, you can start using Accel
 $ weka
 ```
 
+The WEKA package is located in:
+```
+/path/to/conda/env/pkgs/weka
+```
 
 ## Using acceleratedWEKA
 As most of Weka, AcceleratedWEKA's functionality is accessible in two ways:
