@@ -2,7 +2,7 @@ AcceleratedWEKA offers the same options as the standard WEKA.
 
 
 ## Running a quick example with the GUI
-The installation of Accelerated WEKA itself is pretty simple. It is available through Conda, a system providing package and environment management. Such capability means that a simple command can install all dependencies for the project. For example, on a Linux machine, issue the following command in a terminal for installing Accelerated WEKA and all dependencies.
+<!-- The installation of Accelerated WEKA itself is pretty simple. It is available through Conda, a system providing package and environment management. Such capability means that a simple command can install all dependencies for the project. For example, on a Linux machine, issue the following command in a terminal for installing Accelerated WEKA and all dependencies.
 
 ```bash
 conda create -n accelweka -c rapidsai -c nvidia -c conda-forge  -c waikato weka
@@ -18,9 +18,14 @@ This terminal instance just loaded all dependencies for Accelerated WEKA. Launch
 
 ```bash
 weka
+``` -->
+Launch WEKA with the command:
+```bash
+weka
 ```
-![Screenshot of Weka GUI Chooser upon starting WEKA application.](../img/weka-gui-chooser-window.png "WEKA GUI Chooser")
 
+The following window will appear
+![Screenshot of Weka GUI Chooser upon starting WEKA application.](../img/weka-gui-chooser-window.png "WEKA GUI Chooser")
 From there, click the Explorer button to access the functionalities of Accelerated WEKA.
 
 ![Screenshot of the WEKA Explorer window showing the Open file button.](../img/weka-exploer-window.png "WEKA Explorer window")

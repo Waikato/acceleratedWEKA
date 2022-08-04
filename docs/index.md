@@ -11,7 +11,7 @@ In addition, everything is accessible via the Weka GUI, the commandline and prog
 
 
 
-Check the [Getting Started](https://waikato.github.io/acceleratedWEKA/Introduction/getting_started/) and the [Examples](https://waikato.github.io/acceleratedWEKA/Introduction/examples/) sections.
+Check the [Getting Started](https://waikato.github.io/acceleratedWEKA/Introduction/getting_started/) section.
 
 <!-- * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
