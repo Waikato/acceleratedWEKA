@@ -2,15 +2,19 @@
      <img src="./docs/img/weka_logo.png" width="500">
 </p>
 
-# acceleratedWEKA
+# acceleratedWEKA - easy GPU support using WEKA
 
 <!-- [![GitHub release](https://img.shields.io/github/release/Waikato/acceleratedWEKA.svg)](https://GitHub.com/Waikato/acceleratedWEKA/releases/) -->
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 [![Build Status](https://travis-ci.com/Waikato/acceleratedWEKA.svg?branch=master)](https://travis-ci.com/Waikato/acceleratedWEKA)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Waikato/acceleratedWEKA/issues)
 
-AcceleratedWEKA is the automation process to install and use popular WEKA packages that provide GPU-accelerated algorithms. Some of these packages require several configuration steps that might constitute a barrier for those users that are not well versed in configuring systems.
-AcceleratedWEKA uses the Conda environment to install and configure the software and environment required to fully leverage the GPU-accelerated algorithms from the aforementioned packages. 
+<!-- AcceleratedWEKA is the automation process to install and use popular WEKA packages that provide GPU-accelerated algorithms. Some of these packages require several configuration steps that might constitute a barrier for those users that are not well versed in configuring systems.
+AcceleratedWEKA uses the Conda environment to install and configure the software and environment required to fully leverage the GPU-accelerated algorithms from the aforementioned packages.  -->
+
+Accelerated WEKA unifies the [WEKA software](https://www.cs.waikato.ac.nz/ml/weka/), a well-known and open-source Java software, with new technologies that leverage the GPU to shorten the execution time of ML algorithms.
+It has two benefits aimed at users without expertise in system configuration and coding: an easy installation and a GUI that guides the configuration and execution of the ML tasks.
+Accelerated WEKA is a collection of packages available for WEKA (e.g., [WDL4J](https://deeplearning.cms.waikato.ac.nz), [wekaPython](https://weka.sourceforge.io/packageMetaData/wekaPython/index.html), and [wekaRAPIDS](https://github.com/Waikato/wekaRAPIDS)). Accelerated WEKA can be easiy installed and anyone can extend it to support new tools and algorithms.
 
 
 ## Installing acceleratedWEKA
