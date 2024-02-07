@@ -5,7 +5,7 @@ AcceleratedWEKA offers the same options as the standard WEKA.
 <!-- The installation of Accelerated WEKA itself is pretty simple. It is available through Conda, a system providing package and environment management. Such capability means that a simple command can install all dependencies for the project. For example, on a Linux machine, issue the following command in a terminal for installing Accelerated WEKA and all dependencies.
 
 ```bash
-conda create -n accelweka -c rapidsai -c nvidia -c conda-forge  -c waikato weka
+conda create --solver=libmamba -n accelweka -c rapidsai -c nvidia -c conda-forge  -c waikato weka
 ```
 
 Once Conda has created the environment, activate it with the following command:

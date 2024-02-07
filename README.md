@@ -24,7 +24,7 @@ Accelerated WEKA simplifies the installation process by using the [conda environ
 
 #### Creating the conda environment
 ```bash
-$ conda create -n accelweka -c rapidsai -c nvidia -c conda-forge  -c waikato weka
+$ conda --solver=libmamba create -n accelweka -c rapidsai -c nvidia -c conda-forge  -c waikato weka
 ```
 
 #### Activating the conda environment
