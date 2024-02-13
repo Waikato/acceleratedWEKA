@@ -1,4 +1,7 @@
-![WEKA](img/weka_logo.png "WEKA"){: style="height:80%;width:80%"}
+<figure markdown="span">
+  ![Accelerated WEKA](img/acc_weka_logo.jpg){ width="300" }
+  <figcaption></figcaption>
+</figure>
 # Accelerated WEKA - easy GPU support using WEKA
 
 Accelerated WEKA unifies the [WEKA software](https://www.cs.waikato.ac.nz/ml/weka/), a well-known and open-source Java software, with new technologies that leverage the GPU to shorten the execution time of ML algorithms.

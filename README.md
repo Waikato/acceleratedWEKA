@@ -1,5 +1,5 @@
 <p align="center">
-     <img src="./docs/img/weka_logo.png" width="500">
+     <img src="./docs/img/acc_weka_logo.jpg" width="500">
 </p>
 
 # acceleratedWEKA - easy GPU support using WEKA
