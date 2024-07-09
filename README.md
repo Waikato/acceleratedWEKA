@@ -6,7 +6,7 @@
 
 <!-- [![GitHub release](https://img.shields.io/github/release/Waikato/acceleratedWEKA.svg)](https://GitHub.com/Waikato/acceleratedWEKA/releases/) -->
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
-[![Build Status](https://travis-ci.com/Waikato/acceleratedWEKA.svg?branch=master)](https://travis-ci.com/Waikato/acceleratedWEKA)
+<!-- [![Build Status](https://travis-ci.com/Waikato/acceleratedWEKA.svg?branch=master)](https://travis-ci.com/Waikato/acceleratedWEKA) -->
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Waikato/acceleratedWEKA/issues)
 
 <!-- AcceleratedWEKA is the automation process to install and use popular WEKA packages that provide GPU-accelerated algorithms. Some of these packages require several configuration steps that might constitute a barrier for those users that are not well versed in configuring systems.
@@ -24,7 +24,7 @@ Accelerated WEKA simplifies the installation process by using the [conda environ
 
 #### Creating the conda environment
 ```bash
-$ conda create --solver=libmamba -n accelweka -c rapidsai -c nvidia -c conda-forge  -c waikato weka
+$ conda create --solver=libmamba -n accelweka -c rapidsai -c conda-forge -c nvidia -c waikato weka
 ```
 
 #### Activating the conda environment
