@@ -11,7 +11,7 @@ source:
 
 build:
   script: python build.py {{ release }} {{ version_build }}
-  number: 3
+  number: 4
   skip: True  # [not linux]
 
 requirements:
@@ -24,8 +24,7 @@ requirements:
   run:
     - python
     - rapids {{ rapids_version }}
-    - cudatoolkit {{ cudatoolkit_version }}
-    - dask-sql
+    - cuda-version {{ cuda_version }}
     - wget  # [linux]
     - unzip # [linux]
 test:
