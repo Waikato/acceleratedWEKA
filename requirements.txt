@@ -1,0 +1,4 @@
+conda-build
+anaconda-client
+mkdocs
+mkdocs-material
