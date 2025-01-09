@@ -1,5 +1,5 @@
 <figure markdown="span">
-  ![Accelerated WEKA](img/acc_weka_logo.jpg){ width="300" }
+  ![Accelerated WEKA](img/acc_weka_logo.jpg){ width="600" }
   <figcaption></figcaption>
 </figure>
 # Accelerated WEKA - easy GPU support using WEKA
