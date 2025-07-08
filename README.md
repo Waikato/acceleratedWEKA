@@ -134,30 +134,28 @@ Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000
 The full documentation, giving installation instructions and getting started guides, is available at [https://waikato.github.io/acceleratedWEKA/](https://waikato.github.io/acceleratedWEKA/).
 
 
-<!-- ## Citation
+## Citation
 
 Please cite the following paper if using this package in an academic publication:
 
-S. Lang, F. Bravo-Marquez, C. Beckham, M. Hall, and E. Frank  [WekaDeeplearning4j: a Deep Learning Package for Weka based on  DeepLearning4j](https://www.sciencedirect.com/science/article/pii/S0950705119301789),  In *Knowledge-Based Systems*, Volume 178, 15 August 2019, Pages 48-50. DOI: 10.1016/j.knosys.2019.04.013  ([author version](https://felipebravom.com/publications/WDL4J_KBS2019.pdf))
-
+Cassales, G. W., Liu, J. J., & Bifet, A. (2025). Accelerated Weka: GPU Machine Learning with Weka Workbench. Neurocomputing, 646, 130432. https://doi.org/10.1016/j.neucom.2025.130432
 
 BibTex:
 
 ```
-@article{lang2019wekadeeplearning4j,
-  title={WekaDeeplearning4j: A deep learning package for Weka based on Deeplearning4j},
-  author={Lang, Steven and Bravo-Marquez, Felipe and Beckham, Christopher and Hall, Mark and Frank, Eibe},
-  journal={Knowledge-Based Systems},
-  volume = "178",
-  pages = "48 - 50",
-  year = "2019",
-  issn = "0950-7051",
-  doi = "https://doi.org/10.1016/j.knosys.2019.04.013",
-  url = "http://www.sciencedirect.com/science/article/pii/S0950705119301789",
-  publisher={Elsevier}
-} 
-
-```-->
+@article{CASSALES2025130432,
+title = {Accelerated Weka: GPU Machine Learning with Weka Workbench},
+journal = {Neurocomputing},
+volume = {646},
+pages = {130432},
+year = {2025},
+issn = {0925-2312},
+doi = {https://doi.org/10.1016/j.neucom.2025.130432},
+url = {https://www.sciencedirect.com/science/article/pii/S092523122501104X},
+author = {Guilherme Weigert Cassales and Justin Jia Liu and Albert Bifet},
+keywords = {GPU, Machine learning software, Classification, Ensemble methods, Open-source software},
+}
+```
 
 
 ## Related projects
